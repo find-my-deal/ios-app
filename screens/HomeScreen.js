@@ -13,7 +13,7 @@ import { MonoText } from '../components/StyledText';
 export default class HomeScreen extends React.Component {
   static route = {
     navigationBar: {
-      visible: false,
+      title: "Home",
     },
   }
 
@@ -23,7 +23,7 @@ export default class HomeScreen extends React.Component {
 
         <View style={styles.welcomeContainer}>
           <Text style={styles.welcomeHeading}>
-            Find my Deal
+            Find my Deal home screen
           </Text>
         </View>
 

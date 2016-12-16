@@ -1,13 +1,11 @@
 import React from 'react';
 import {
-  ScrollView,
+  View,
+  Text,
   StyleSheet,
 } from 'react-native';
-import {
-  ExponentConfigView,
-} from '@exponent/samples';
 
-export default class SettingsScreen extends React.Component {
+export default class MenuScreen extends React.Component {
   static route = {
     navigationBar: {
       title: 'Menu'
@@ -16,15 +14,15 @@ export default class SettingsScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView
+      <View
         style={styles.container}
         contentContainerStyle={this.props.route.getContentContainerStyle()}>
 
-        { /* Go ahead and delete ExponentConfigView and replace it with your
-           * content, we just wanted to give you a quick view of your config */ }
-        <ExponentConfigView />
+        <Text>
+          Here is the menu tab
+        </Text>
 
-      </ScrollView>
+      </View>
     );
   }
 }
