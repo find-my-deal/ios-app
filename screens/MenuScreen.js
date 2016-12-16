@@ -4,13 +4,13 @@ import {
   StyleSheet,
 } from 'react-native';
 import {
-  ExponentLinksView,
+  ExponentConfigView,
 } from '@exponent/samples';
 
-export default class LinksScreen extends React.Component {
+export default class SettingsScreen extends React.Component {
   static route = {
     navigationBar: {
-      title: 'Links',
+      title: 'Menu'
     },
   }
 
@@ -20,19 +20,17 @@ export default class LinksScreen extends React.Component {
         style={styles.container}
         contentContainerStyle={this.props.route.getContentContainerStyle()}>
 
-        { /* Go ahead and delete ExponentLinksView and replace it with your
-           * content, we just wanted to provide you with some helpful links */ }
-        <ExponentLinksView />
+        { /* Go ahead and delete ExponentConfigView and replace it with your
+           * content, we just wanted to give you a quick view of your config */ }
+        <ExponentConfigView />
 
       </ScrollView>
     );
   }
-
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 15,
   },
 });
