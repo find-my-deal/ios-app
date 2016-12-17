@@ -2,6 +2,7 @@ import React from 'react';
 import {
   View,
   Text,
+  MapView,
   StyleSheet,
 } from 'react-native';
 
