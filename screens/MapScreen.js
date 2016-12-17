@@ -21,6 +21,10 @@ export default class MapScreen extends React.Component {
         <Text>
           Here will be a map view
         </Text>
+        <MapView
+        style={{height: 200, margin: 40}}
+        showsUserLocation={true}
+        />
 
       </View>
     );
