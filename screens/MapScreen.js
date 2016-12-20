@@ -5,6 +5,7 @@ import {
   MapView,
   StyleSheet,
 } from 'react-native';
+import { Components } from 'exponent';
 
 export default class MapScreen extends React.Component {
   static route = {
@@ -19,13 +20,15 @@ export default class MapScreen extends React.Component {
         style={styles.container}
         contentContainerStyle={this.props.route.getContentContainerStyle()}>
 
-        <Text>
-          Here will be a map view
-        </Text>
-        <MapView
-        style={{height: 200, margin: 40}}
-        showsUserLocation={true}
-        />
+        <Components.MapView
+        style={{flex: 1}}
+        initialRegion={{
+          latitude: -36.8485,
+          longitude: 174.7633,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      />
 
       </View>
     );
