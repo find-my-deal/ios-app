@@ -23,10 +23,10 @@ export default class MapScreen extends React.Component {
         <Components.MapView
         style={{flex: 1}}
         initialRegion={{
-          latitude: -36.8485,
-          longitude: 174.7633,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
+          latitude: -36.8532912,
+          longitude: 174.743273,
+          latitudeDelta: 0.0922/6,
+          longitudeDelta: 0.0421/6,
         }}
       />
 
